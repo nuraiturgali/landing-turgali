@@ -135,7 +135,7 @@ Below are screenshots of the website at the three required responsive widths.
 
 The mobile version uses a single-column layout. The content, images, form, and cards fit within the screen width.
 
-![NURAI YOGA Mobile 375px](screenshots/2.png)
+![NURAI YOGA Mobile 375px](screenshots/2.jpeg)
 
 ---
 
@@ -143,7 +143,7 @@ The mobile version uses a single-column layout. The content, images, form, and c
 
 The tablet version uses more horizontal space. The yoga class cards are displayed in two columns.
 
-![NURAI YOGA Tablet 768px](screenshots/1.png)
+![NURAI YOGA Tablet 768px](screenshots/1.jpeg)
 
 ---
 
@@ -151,7 +151,7 @@ The tablet version uses more horizontal space. The yoga class cards are displaye
 
 The desktop version uses the full layout. The class section displays three cards in one row, and larger sections use two-column Grid layouts.
 
-![NURAI YOGA Desktop 1280px](screenshots/3.png)
+![NURAI YOGA Desktop 1280px](screenshots/3.jpeg)
 
 ---
 
