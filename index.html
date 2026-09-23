@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
 
@@ -12,199 +13,346 @@
 
     <link rel="icon" href="favicon.ico">
 
-    <link rel="stylesheet" href="style.css">
+    <!-- Tailwind CSS Play CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body>
 
-    <header>
-        <nav>
-            <h2 class="logo">NURAI YOGA</h2>
+<body class="bg-[#f7f5ef] text-[#33443c]">
 
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#classes">Classes</a></li>
-                <li><a href="#benefits">Benefits</a></li>
-                <li><a href="#contact">Contact</a></li>
+    <!-- HEADER -->
+    <header class="border-b border-[#ddd8cc] px-6 py-5 sm:px-8 lg:px-16">
+
+        <nav class="flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
+
+            <h2 class="text-2xl font-bold tracking-[2px]">
+                NURAI YOGA
+            </h2>
+
+            <ul class="flex flex-col items-center gap-3 sm:flex-row sm:gap-6">
+
+                <li>
+                    <a href="#about"
+                       class="transition hover:text-[#8b9b88]">
+                        About
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#classes"
+                       class="transition hover:text-[#8b9b88]">
+                        Classes
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#benefits"
+                       class="transition hover:text-[#8b9b88]">
+                        Benefits
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#contact"
+                       class="transition hover:text-[#8b9b88]">
+                        Contact
+                    </a>
+                </li>
+
             </ul>
+
         </nav>
+
     </header>
 
 
     <main>
 
         <!-- HERO -->
-        <section class="hero">
-            <div class="hero-content">
-                <p class="small-title">YOGA STUDIO IN ALMATY</p>
+        <section class="grid grid-cols-1 items-center gap-10 px-6 py-16 sm:px-8 md:gap-14 lg:grid-cols-2 lg:px-16 lg:py-20">
 
-                <h1>Find Your Balance</h1>
+            <div class="max-w-xl">
 
-                <p>
+                <p class="mb-5 text-sm font-bold tracking-[3px] text-[#8b9b88]">
+                    YOGA STUDIO IN ALMATY
+                </p>
+
+                <h1 class="mb-6 text-5xl font-bold leading-tight sm:text-6xl">
+                    Find Your Balance
+                </h1>
+
+                <p class="mb-8 text-lg leading-relaxed">
                     A peaceful space where you can relax,
                     become stronger and connect with yourself.
                 </p>
 
-                <a class="button" href="#contact">Book a Class</a>
+                <a href="#contact"
+                   class="inline-block rounded-full bg-[#6f8173] px-8 py-4 text-white transition hover:bg-[#526357]">
+                    Book a Class
+                </a>
+
             </div>
 
-            <div class="hero-image">
-                <img src="yoga-main.jpg"
-                     alt="Woman practicing yoga in a peaceful studio">
+
+            <div>
+                <img src="images/yoga-main.jpg"
+                     alt="Woman practicing yoga in a peaceful studio"
+                     class="h-[400px] w-full rounded-[200px_200px_20px_20px] object-cover sm:h-[500px]">
             </div>
+
         </section>
 
 
         <!-- ABOUT -->
-        <section id="about" class="about">
+        <section id="about"
+                 class="grid grid-cols-1 items-center gap-10 bg-[#e8e5dc] px-6 py-16 sm:px-8 md:gap-14 lg:grid-cols-2 lg:px-16 lg:py-20">
+
             <div>
-                <p class="small-title">ABOUT OUR STUDIO</p>
 
-                <h2>Yoga for Body and Mind</h2>
+                <p class="mb-5 text-sm font-bold tracking-[3px] text-[#8b9b88]">
+                    ABOUT OUR STUDIO
+                </p>
 
-                <p>
+                <h2 class="mb-6 text-4xl font-bold">
+                    Yoga for Body and Mind
+                </h2>
+
+                <p class="mb-5 text-lg leading-relaxed">
                     Our yoga studio is a comfortable place for people
                     who want to improve their physical and mental well-being.
                     We create a calm atmosphere where everyone can feel welcome.
                 </p>
 
-                <p>
+                <p class="text-lg leading-relaxed">
                     Our classes are suitable for both beginners
                     and experienced students.
                 </p>
+
             </div>
 
-            <img src="yoga-about.jpg"
-                 alt="Person practicing yoga on a yoga mat">
+
+            <img src="images/yoga-about.jpg"
+                 alt="Person practicing yoga on a yoga mat"
+                 class="h-[350px] w-full rounded-2xl object-cover sm:h-[450px]">
+
         </section>
 
 
         <!-- CLASSES -->
-        <section id="classes" class="classes">
-            <p class="small-title">OUR CLASSES</p>
+        <section id="classes"
+                 class="px-6 py-16 text-center sm:px-8 lg:px-16 lg:py-20">
 
-            <h2>Choose Your Practice</h2>
+            <p class="mb-5 text-sm font-bold tracking-[3px] text-[#8b9b88]">
+                OUR CLASSES
+            </p>
 
-            <div class="cards">
+            <h2 class="text-4xl font-bold">
+                Choose Your Practice
+            </h2>
 
-                <article class="card">
-                    <h3>Morning Yoga</h3>
 
-                    <p>
+            <!-- Responsive Grid -->
+            <div class="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+
+
+                <!-- CARD 1 -->
+                <article class="rounded-2xl bg-white p-8 text-left shadow-sm">
+
+                    <h3 class="mb-4 text-2xl font-bold">
+                        Morning Yoga
+                    </h3>
+
+                    <p class="mb-6 text-lg leading-relaxed text-[#59665f]">
                         Start your day with gentle movements,
                         breathing exercises and positive energy.
                     </p>
 
-                    <span>08:00 — 09:00</span>
+                    <span class="font-bold text-[#6f8173]">
+                        08:00 — 09:00
+                    </span>
+
                 </article>
 
 
-                <article class="card">
-                    <h3>Relax Yoga</h3>
+                <!-- CARD 2 -->
+                <article class="rounded-2xl bg-white p-8 text-left shadow-sm">
 
-                    <p>
+                    <h3 class="mb-4 text-2xl font-bold">
+                        Relax Yoga
+                    </h3>
+
+                    <p class="mb-6 text-lg leading-relaxed text-[#59665f]">
                         Slow movements and breathing techniques
                         to reduce stress and relax your body.
                     </p>
 
-                    <span>18:00 — 19:00</span>
+                    <span class="font-bold text-[#6f8173]">
+                        18:00 — 19:00
+                    </span>
+
                 </article>
 
 
-                <article class="card">
-                    <h3>Power Yoga</h3>
+                <!-- CARD 3 -->
+                <article class="rounded-2xl bg-white p-8 text-left shadow-sm">
 
-                    <p>
+                    <h3 class="mb-4 text-2xl font-bold">
+                        Power Yoga
+                    </h3>
+
+                    <p class="mb-6 text-lg leading-relaxed text-[#59665f]">
                         An energetic practice designed to improve
                         strength, flexibility and balance.
                     </p>
 
-                    <span>19:30 — 20:30</span>
+                    <span class="font-bold text-[#6f8173]">
+                        19:30 — 20:30
+                    </span>
+
                 </article>
 
             </div>
+
         </section>
 
 
         <!-- BENEFITS -->
-        <section id="benefits" class="benefits">
+        <section id="benefits"
+                 class="grid grid-cols-1 items-center gap-10 bg-[#e8e5dc] px-6 py-16 sm:px-8 md:gap-14 lg:grid-cols-2 lg:px-16 lg:py-20">
 
-            <div class="benefits-image">
-                <img src="yoga-benefits.jpg"
-                     alt="Woman sitting in a meditation position">
+            <div>
+
+                <img src="images/yoga-benefits.jpg"
+                     alt="Woman sitting in a meditation position"
+                     class="h-[350px] w-full rounded-2xl object-cover sm:h-[450px]">
+
             </div>
 
-            <div class="benefits-content">
-                <p class="small-title">WHY YOGA?</p>
 
-                <h2>Feel Better Every Day</h2>
+            <div>
 
-                <ul>
-                    <li>Improves flexibility</li>
-                    <li>Helps reduce stress</li>
-                    <li>Improves concentration</li>
-                    <li>Strengthens the body</li>
-                    <li>Supports better sleep</li>
+                <p class="mb-5 text-sm font-bold tracking-[3px] text-[#8b9b88]">
+                    WHY YOGA?
+                </p>
+
+                <h2 class="mb-6 text-4xl font-bold">
+                    Feel Better Every Day
+                </h2>
+
+                <ul class="space-y-4 text-lg">
+
+                    <li>
+                        <span class="mr-3 font-bold text-[#6f8173]">✓</span>
+                        Improves flexibility
+                    </li>
+
+                    <li>
+                        <span class="mr-3 font-bold text-[#6f8173]">✓</span>
+                        Helps reduce stress
+                    </li>
+
+                    <li>
+                        <span class="mr-3 font-bold text-[#6f8173]">✓</span>
+                        Improves concentration
+                    </li>
+
+                    <li>
+                        <span class="mr-3 font-bold text-[#6f8173]">✓</span>
+                        Strengthens the body
+                    </li>
+
+                    <li>
+                        <span class="mr-3 font-bold text-[#6f8173]">✓</span>
+                        Supports better sleep
+                    </li>
+
                 </ul>
+
             </div>
 
         </section>
 
 
         <!-- CONTACT -->
-        <section id="contact" class="contact">
+        <section id="contact"
+                 class="grid grid-cols-1 items-start gap-10 px-6 py-16 sm:px-8 md:gap-14 lg:grid-cols-2 lg:px-16 lg:py-20">
 
             <div>
-                <p class="small-title">CONTACT US</p>
 
-                <h2>Start Your Yoga Journey</h2>
+                <p class="mb-5 text-sm font-bold tracking-[3px] text-[#8b9b88]">
+                    CONTACT US
+                </p>
 
-                <p>
+                <h2 class="mb-6 text-4xl font-bold">
+                    Start Your Yoga Journey
+                </h2>
+
+                <p class="text-lg leading-relaxed">
                     Have a question or want to book your first class?
                     Send us a message.
                 </p>
+
             </div>
 
 
-            <form>
+            <!-- CONTACT FORM -->
+            <form class="rounded-2xl bg-white p-6 shadow-sm sm:p-10">
 
-                <div class="form-group">
-                    <label for="name">Your Name</label>
+                <div class="mb-5">
 
-                    <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        placeholder="Enter your name"
-                        required>
+                    <label for="name"
+                           class="mb-2 block font-bold">
+                        Your Name
+                    </label>
+
+                    <input type="text"
+                           id="name"
+                           name="name"
+                           placeholder="Enter your name"
+                           required
+                           class="w-full rounded-xl border border-[#d5d0c5] bg-[#faf9f6] px-4 py-3 outline-none focus:ring-2 focus:ring-[#8b9b88]">
+
                 </div>
 
 
-                <div class="form-group">
-                    <label for="email">Your Email</label>
+                <div class="mb-5">
 
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        placeholder="Enter your email"
-                        required>
+                    <label for="email"
+                           class="mb-2 block font-bold">
+                        Your Email
+                    </label>
+
+                    <input type="email"
+                           id="email"
+                           name="email"
+                           placeholder="Enter your email"
+                           required
+                           class="w-full rounded-xl border border-[#d5d0c5] bg-[#faf9f6] px-4 py-3 outline-none focus:ring-2 focus:ring-[#8b9b88]">
+
                 </div>
 
 
-                <div class="form-group">
-                    <label for="message">Your Message</label>
+                <div class="mb-5">
 
-                    <textarea
-                        id="message"
-                        name="message"
-                        rows="5"
-                        placeholder="Write your message"
-                        required></textarea>
+                    <label for="message"
+                           class="mb-2 block font-bold">
+                        Your Message
+                    </label>
+
+                    <textarea id="message"
+                              name="message"
+                              rows="5"
+                              placeholder="Write your message"
+                              required
+                              class="w-full resize-y rounded-xl border border-[#d5d0c5] bg-[#faf9f6] px-4 py-3 outline-none focus:ring-2 focus:ring-[#8b9b88]"></textarea>
+
                 </div>
 
 
-                <button type="submit">Send Message</button>
+                <button type="submit"
+                        class="w-full rounded-full bg-[#6f8173] px-6 py-4 text-white transition hover:bg-[#526357]">
+                    Send Message
+                </button>
 
             </form>
 
@@ -213,10 +361,19 @@
     </main>
 
 
-    <footer>
-        <p>© 2026 Nurai Turgali — Yoga Studio</p>
-        <p>Almaty, Kazakhstan</p>
+    <!-- FOOTER -->
+    <footer class="bg-[#33443c] px-6 py-8 text-center text-white">
+
+        <p class="text-sm">
+            © 2026 Nurai Turgali — Yoga Studio
+        </p>
+
+        <p class="mt-2 text-sm">
+            Almaty, Kazakhstan
+        </p>
+
     </footer>
 
 </body>
+
 </html>
